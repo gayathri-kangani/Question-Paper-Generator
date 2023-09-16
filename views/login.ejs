@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create Account</title>
+    <style>
+        body {
+            font-family:  sans-serif;
+            background: url(https://images.unsplash.com/photo-1542401886-65d6c61db217?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+        }
+        .ex {
+            font-family: Times, serif;
+            letter-spacing: 1px;
+            margin: 5px;
+            margin-bottom: 18px;
+        }
+        a {
+            font-size: 17px;
+            letter-spacing: 1px;
+            text-decoration: none;
+            padding: 21%;
+        }
+        p {
+            font-size: 13px;
+            opacity: 0.7;
+        }
+        .form-con {
+            background-color: rgba(255,255,255,0.6);
+            width: 30%;
+            padding: 30px;
+            margin: auto;
+            box-shadow: 0 3px 18px rgba(0,0,0,0.2);
+            border-radius: 10px;
+        }
+        input[type=password], input[type=text] {
+            padding: 15px;
+            width: 90%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type=radio] {
+            margin-left: 14px;
+            margin-right: 14px;
+            opacity: 0.7;
+        }
+        
+        #login {
+                padding: 15px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                margin-left: 22%;
+                width: 50%;
+                background-color: #42b72a;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bolder;
+                font-size: large;
+                align-items: center;
+        }
+        #login:hover {
+            background-color: #359522;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <div class="form-con">
+            <form method="POST" action="/login">
+                <h1 align="center">Login</h1>
+                <hr><br>
+                <input type="text" name="username" id="username"  placeholder="username"><br>
+                <br>
+                <input type="password" name="password" id="password"  placeholder="password"><br>
+                <br>
+                <input type="submit" name="submit" value="Login" id="login">
+                <br><br>
+                
+            </form>
+        </div>
+    </main>
+
+    
+</body>
+</html>
